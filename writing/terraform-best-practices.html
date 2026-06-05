@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Terraform best practices for state, modules, reviews, naming, and reliable infrastructure automation.">
+    <meta name="author" content="Akkireddy Challa">
+    <title>Terraform Best Practices | Akkireddy Challa</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="../index.html" aria-label="Akkireddy Challa home">AC</a>
+        <nav aria-label="Primary navigation">
+            <a href="../index.html#work">Work</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#open-source">Open Source</a>
+            <a href="../blog.html">Writing</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article class="article">
+            <a class="text-link" href="../blog.html">Back to writing</a>
+            <p class="eyebrow">Terraform</p>
+            <h1>Terraform best practices I keep coming back to</h1>
+            <p class="article-meta">By Akkireddy Challa / Updated 2026</p>
+            <p>Terraform is powerful because it makes infrastructure reviewable. The same power can become risky when state, modules, and ownership are unclear. These are the practices I keep returning to because they make infrastructure easier to reason about.</p>
+            <h2>Keep state boring</h2>
+            <p>Remote state, locking, clear workspace boundaries, and predictable naming are basic, but they matter. Most painful Terraform problems begin when state ownership is unclear or when too many unrelated resources live in one state file.</p>
+            <h2>Build modules around real reuse</h2>
+            <p>A module should hide meaningful complexity, not every line of configuration. I prefer small modules with explicit inputs, sensible defaults, and outputs that support the next layer. When a module becomes a second programming language, it is probably doing too much.</p>
+            <h2>Review plans like production changes</h2>
+            <p>A Terraform plan is not a formality. It is the change record. Plans should be readable in CI, reviewed before apply, and checked for destructive actions, IAM drift, unexpected recreation, and cost impact.</p>
+            <h2>Separate environments carefully</h2>
+            <p>Development, staging, and production should be similar enough to catch issues but separate enough to reduce blast radius. Environment differences should be intentional and visible.</p>
+            <h2>Document the contract</h2>
+            <p>Good Terraform repositories explain ownership, prerequisites, how to plan, how to apply, where state lives, and how rollbacks or emergency changes work. Documentation is part of the infrastructure.</p>
+        </article>
+    </main>
+</body>
+</html>
