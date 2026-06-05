@@ -549,6 +549,41 @@ html[data-theme='dark'] .search-input {
     color: var(--text);
 }
 
+.clear-filters:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.search-meta {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.result-count {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 0;
+}
+
+.card-tag {
+    display: inline-flex;
+    border-radius: 999px;
+    background: rgba(16, 20, 24, 0.04);
+    border: 1px solid rgba(16, 20, 24, 0.08);
+    color: var(--text);
+    padding: 8px 10px;
+    font-size: 0.78rem;
+    text-transform: none;
+}
+
 .article-tags {
     display: flex;
     flex-wrap: wrap;

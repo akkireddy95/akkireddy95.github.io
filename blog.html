@@ -14,6 +14,14 @@
         content="Practical field notes for cloud platforms, DevOps, SRE, and AI infrastructure.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://akkireddy95.github.io/blog.html">
+    <meta property="og:image" content="https://akkireddy95.github.io/images/lead-bg.jpg">
+    <meta property="og:image:alt" content="Engineering writing from Akkireddy Challa">
+    <link rel="canonical" href="https://akkireddy95.github.io/blog.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Writing | Akkireddy Challa">
+    <meta name="twitter:description"
+        content="Practical field notes for cloud platforms, DevOps, SRE, and AI infrastructure.">
+    <meta name="twitter:image" content="https://akkireddy95.github.io/images/lead-bg.jpg">
     <title>Writing | Akkireddy Challa</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -58,17 +66,24 @@
                 <label for="write-search" class="search-label">Search writing</label>
                 <input id="write-search" class="search-input" type="search"
                     placeholder="Search articles, topics, or tags" aria-label="Search writing articles">
+                <div class="search-meta">
+                    <p class="result-count" aria-live="polite">Showing 7 articles</p>
+                </div>
                 <div class="tag-filters" aria-label="Tag filters" role="group">
-                    <button type="button" class="tag-pill" data-tag="platform engineering">Platform</button>
-                    <button type="button" class="tag-pill" data-tag="terraform">Terraform</button>
-                    <button type="button" class="tag-pill" data-tag="observability">Observability</button>
-                    <button type="button" class="tag-pill" data-tag="ai infrastructure">AI</button>
-                    <button type="button" class="tag-pill" data-tag="ai ops">AI Ops</button>
-                    <button type="button" class="tag-pill" data-tag="finops">FinOps</button>
-                    <button type="button" class="tag-pill" data-tag="kubernetes">Kubernetes</button>
-                    <button type="button" class="tag-pill" data-tag="security">Security</button>
-                    <button type="button" class="tag-pill" data-tag="governance">Governance</button>
-                    <button type="button" class="tag-pill" data-tag="mlops">MLOps</button>
+                    <button type="button" class="tag-pill" data-tag="platform engineering"
+                        aria-pressed="false">Platform</button>
+                    <button type="button" class="tag-pill" data-tag="terraform" aria-pressed="false">Terraform</button>
+                    <button type="button" class="tag-pill" data-tag="observability"
+                        aria-pressed="false">Observability</button>
+                    <button type="button" class="tag-pill" data-tag="ai infrastructure" aria-pressed="false">AI</button>
+                    <button type="button" class="tag-pill" data-tag="ai ops" aria-pressed="false">AI Ops</button>
+                    <button type="button" class="tag-pill" data-tag="finops" aria-pressed="false">FinOps</button>
+                    <button type="button" class="tag-pill" data-tag="kubernetes"
+                        aria-pressed="false">Kubernetes</button>
+                    <button type="button" class="tag-pill" data-tag="security" aria-pressed="false">Security</button>
+                    <button type="button" class="tag-pill" data-tag="governance"
+                        aria-pressed="false">Governance</button>
+                    <button type="button" class="tag-pill" data-tag="mlops" aria-pressed="false">MLOps</button>
                 </div>
                 <button type="button" id="clear-filters" class="clear-filters"
                     aria-label="Clear selected tags and search">Clear filters</button>
@@ -78,18 +93,36 @@
                     <span>Platform engineering</span>
                     <h3>How I think about building a cloud platform operating model</h3>
                     <p>A practical model for reliability, delivery speed, IAM, observability, and cost ownership.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">Platform engineering</span>
+                        <span class="card-tag">Observability</span>
+                        <span class="card-tag">Cost</span>
+                        <span class="card-tag">IAM</span>
+                    </div>
                     <a href="writing/cloud-platform-operating-model.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="terraform,infrastructure,devops,best practices">
                     <span>Terraform</span>
                     <h3>Terraform best practices I keep coming back to</h3>
                     <p>Patterns for state, modules, reviews, naming, and repeatable infrastructure delivery.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">Terraform</span>
+                        <span class="card-tag">Infrastructure</span>
+                        <span class="card-tag">DevOps</span>
+                        <span class="card-tag">Best practices</span>
+                    </div>
                     <a href="writing/terraform-best-practices.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="observability,platform engineering,sre,monitoring">
                     <span>Observability</span>
                     <h3>Observability foundations for platform teams</h3>
                     <p>How to move from dashboards to signals, ownership, and reliable incident response.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">Observability</span>
+                        <span class="card-tag">Platform engineering</span>
+                        <span class="card-tag">SRE</span>
+                        <span class="card-tag">Monitoring</span>
+                    </div>
                     <a href="writing/observability-for-platforms.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="ai infrastructure,mlops,governance,compute">
@@ -97,6 +130,12 @@
                     <h3>Practical infrastructure foundations for AI teams</h3>
                     <p>Governed environments, scalable compute, artifact paths, cost controls, and deployment
                         foundations.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">AI infrastructure</span>
+                        <span class="card-tag">MLOps</span>
+                        <span class="card-tag">Governance</span>
+                        <span class="card-tag">Compute</span>
+                    </div>
                     <a href="writing/ai-infrastructure-foundations.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="ai ops,mlops,observability,governance,cost">
@@ -104,6 +143,13 @@
                     <h3>AI Ops trends to watch in 2026</h3>
                     <p>Practical shifts in model observability, reproducibility, governance, and cost-aware lifecycle.
                     </p>
+                    <div class="card-tags">
+                        <span class="card-tag">AI Ops</span>
+                        <span class="card-tag">MLOps</span>
+                        <span class="card-tag">Observability</span>
+                        <span class="card-tag">Governance</span>
+                        <span class="card-tag">Cost</span>
+                    </div>
                     <a href="writing/trending-ai-ops-2026.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="finops,cost,autoscaling,telemetry">
@@ -111,12 +157,24 @@
                     <h3>Cloud cost optimization patterns for 2026</h3>
                     <p>Autoscaling economics, spot strategies, and telemetry-driven rightsizing to control cloud spend.
                     </p>
+                    <div class="card-tags">
+                        <span class="card-tag">FinOps</span>
+                        <span class="card-tag">Cost</span>
+                        <span class="card-tag">Autoscaling</span>
+                        <span class="card-tag">Telemetry</span>
+                    </div>
                     <a href="writing/cloud-cost-optimization-2026.html">Read article</a>
                 </article>
                 <article class="writing-card" data-tags="kubernetes,security,policy,runtime protection">
                     <span>Kubernetes</span>
                     <h3>Kubernetes security priorities for 2026</h3>
                     <p>Supply chain hardening, RBAC least-privilege, and runtime protection approaches.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">Kubernetes</span>
+                        <span class="card-tag">Security</span>
+                        <span class="card-tag">Policy</span>
+                        <span class="card-tag">Runtime protection</span>
+                    </div>
                     <a href="writing/k8s-security-2026.html">Read article</a>
                 </article>
             </div>
@@ -177,6 +235,8 @@
                     if (show) visible += 1;
                 });
 
+                const resultCount = document.querySelector('.result-count');
+                resultCount.textContent = visible === 1 ? 'Showing 1 article' : `Showing ${visible} articles`;
                 noResults.classList.toggle('hidden', visible > 0);
             };
 
@@ -185,12 +245,15 @@
                 if (selectedTags.has(tag)) {
                     selectedTags.delete(tag);
                     button.classList.remove('active');
+                    button.setAttribute('aria-pressed', 'false');
                 } else {
                     selectedTags.add(tag);
                     button.classList.add('active');
+                    button.setAttribute('aria-pressed', 'true');
                 }
                 updateUrl();
                 filterCards();
+                updateClearButton();
             };
 
             const existingTags = new Set(tagButtons.map(btn => btn.dataset.tag.toLowerCase()));
@@ -205,12 +268,12 @@
                     button.type = 'button';
                     button.className = 'tag-pill';
                     button.dataset.tag = tag;
+                    button.setAttribute('aria-pressed', 'false');
                     button.textContent = tag
                         .split(' ')
                         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                         .join(' ');
                     tagFilters.appendChild(button);
-                    button.addEventListener('click', () => toggleTag(button));
                     tagButtons.push(button);
                 }
             });
@@ -230,6 +293,7 @@
                     if (button) {
                         selectedTags.add(tag);
                         button.classList.add('active');
+                        button.setAttribute('aria-pressed', 'true');
                     }
                 });
             }
@@ -237,18 +301,29 @@
             searchInput.addEventListener('input', () => {
                 updateUrl();
                 filterCards();
+                updateClearButton();
             });
 
             const clearFiltersButton = document.getElementById('clear-filters');
+            const updateClearButton = () => {
+                const hasFilters = selectedTags.size > 0 || searchInput.value.trim().length > 0;
+                clearFiltersButton.disabled = !hasFilters;
+            };
+
             clearFiltersButton.addEventListener('click', () => {
                 selectedTags.clear();
-                tagButtons.forEach(btn => btn.classList.remove('active'));
+                tagButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
                 searchInput.value = '';
                 updateUrl();
                 filterCards();
+                updateClearButton();
             });
 
             filterCards();
+            updateClearButton();
         })();
     </script>
 </body>
