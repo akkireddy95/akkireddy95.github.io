@@ -561,6 +561,12 @@ html[data-theme='dark'] .search-input {
     margin-top: 8px;
 }
 
+.tag-filter-help {
+    color: var(--muted);
+    margin: 12px 0 6px;
+    font-size: 0.95rem;
+}
+
 .result-count {
     color: var(--muted);
     font-weight: 700;
