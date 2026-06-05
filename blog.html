@@ -120,7 +120,7 @@
                     <a href="writing/k8s-security-2026.html">Read article</a>
                 </article>
             </div>
-            <p class="no-results hidden">No articles match your search or selected tags.</p>
+            <p class="no-results hidden" aria-live="polite">No articles match your search or selected tags.</p>
         </section>
     </main>
 
@@ -138,6 +138,7 @@
     <script>
         (function () {
             const searchInput = document.getElementById('write-search');
+            const tagFilters = document.querySelector('.tag-filters');
             const tagButtons = Array.from(document.querySelectorAll('.tag-pill'));
             const cards = Array.from(document.querySelectorAll('.writing-card'));
             const noResults = document.querySelector('.no-results');
@@ -191,6 +192,28 @@
                 updateUrl();
                 filterCards();
             };
+
+            const existingTags = new Set(tagButtons.map(btn => btn.dataset.tag.toLowerCase()));
+            const allTags = new Set();
+            cards.forEach(card => {
+                card.dataset.tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean).forEach(tag => allTags.add(tag));
+            });
+
+            allTags.forEach(tag => {
+                if (!existingTags.has(tag)) {
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'tag-pill';
+                    button.dataset.tag = tag;
+                    button.textContent = tag
+                        .split(' ')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(' ');
+                    tagFilters.appendChild(button);
+                    button.addEventListener('click', () => toggleTag(button));
+                    tagButtons.push(button);
+                }
+            });
 
             tagButtons.forEach(button => {
                 button.addEventListener('click', () => toggleTag(button));
