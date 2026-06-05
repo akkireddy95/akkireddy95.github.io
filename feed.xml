@@ -8,6 +8,22 @@
     <atom:link href="https://akkireddy95.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Build MCP skills for AI assistants</title>
+      <link>https://akkireddy95.github.io/writing/mcp-skills-for-ai.html</link>
+      <guid>https://akkireddy95.github.io/writing/mcp-skills-for-ai.html</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <description>A practical guide to building MCP skills for AI assistants, including design, prompts, and integration.</description>
+    </item>
+
+    <item>
+      <title>Run AI models locally with OpenLLM</title>
+      <link>https://akkireddy95.github.io/writing/openllm-local-ai-models.html</link>
+      <guid>https://akkireddy95.github.io/writing/openllm-local-ai-models.html</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <description>A practical guide to running AI models locally with OpenLLM and open-source tooling for inference.</description>
+    </item>
+
+    <item>
       <title>AI Ops trends to watch in 2026</title>
       <link>https://akkireddy95.github.io/writing/trending-ai-ops-2026.html</link>
       <guid>https://akkireddy95.github.io/writing/trending-ai-ops-2026.html</guid>

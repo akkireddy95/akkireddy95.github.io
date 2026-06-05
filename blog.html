@@ -67,7 +67,7 @@
                 <input id="write-search" class="search-input" type="search"
                     placeholder="Search articles, topics, or tags" aria-label="Search writing articles">
                 <div class="search-meta">
-                    <p class="result-count" aria-live="polite">Showing 7 articles</p>
+                    <p class="result-count" aria-live="polite">Showing 9 articles</p>
                 </div>
                 <div class="tag-filters" aria-label="Tag filters" role="group">
                     <button type="button" class="tag-pill" data-tag="platform engineering"
@@ -84,6 +84,14 @@
                     <button type="button" class="tag-pill" data-tag="governance"
                         aria-pressed="false">Governance</button>
                     <button type="button" class="tag-pill" data-tag="mlops" aria-pressed="false">MLOps</button>
+                    <button type="button" class="tag-pill" data-tag="mcp" aria-pressed="false">MCP</button>
+                    <button type="button" class="tag-pill" data-tag="prompt engineering"
+                        aria-pressed="false">Prompt</button>
+                    <button type="button" class="tag-pill" data-tag="open source" aria-pressed="false">Open
+                        source</button>
+                    <button type="button" class="tag-pill" data-tag="local ai" aria-pressed="false">Local AI</button>
+                    <button type="button" class="tag-pill" data-tag="openllm" aria-pressed="false">OpenLLM</button>
+                    <button type="button" class="tag-pill" data-tag="ai models" aria-pressed="false">AI models</button>
                 </div>
                 <button type="button" id="clear-filters" class="clear-filters"
                     aria-label="Clear selected tags and search">Clear filters</button>
@@ -176,6 +184,31 @@
                         <span class="card-tag">Runtime protection</span>
                     </div>
                     <a href="writing/k8s-security-2026.html">Read article</a>
+                </article>
+                <article class="writing-card"
+                    data-tags="mcp,ai infrastructure,developer productivity,prompt engineering">
+                    <span>MCP Skills</span>
+                    <h3>Build MCP skills for AI assistants</h3>
+                    <p>Practical guidance for designing, validating, and integrating custom AI assistant skills.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">MCP</span>
+                        <span class="card-tag">AI infrastructure</span>
+                        <span class="card-tag">Developer productivity</span>
+                        <span class="card-tag">Prompt engineering</span>
+                    </div>
+                    <a href="writing/mcp-skills-for-ai.html">Read article</a>
+                </article>
+                <article class="writing-card" data-tags="open source,local ai,openllm,ai models,inference">
+                    <span>Open source AI</span>
+                    <h3>Run AI models locally with OpenLLM</h3>
+                    <p>How to use OpenLLM and open-source tooling for local model inference and experimentation.</p>
+                    <div class="card-tags">
+                        <span class="card-tag">Open source</span>
+                        <span class="card-tag">Local AI</span>
+                        <span class="card-tag">OpenLLM</span>
+                        <span class="card-tag">AI models</span>
+                    </div>
+                    <a href="writing/openllm-local-ai-models.html">Read article</a>
                 </article>
             </div>
             <p class="no-results hidden" aria-live="polite">No articles match your search or selected tags.</p>
